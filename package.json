@@ -8,7 +8,9 @@
     "build": "gulp build",
     "release": "sh ./release.sh"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "aut",
     "gulp",

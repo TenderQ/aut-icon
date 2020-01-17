@@ -2,12 +2,12 @@
   font-style: normal;
   font-weight: normal;
   font-family: 'aut-icon';
-  src: url('aut-icon.eot?t=1579234722626');
-  src: url('aut-icon.eot?t=1579234722626#iefix') format('embedded-opentype'),
-       url('aut-icon.woff2?t=1579234722626') format('woff2'),
-       url('aut-icon.woff?t=1579234722626') format('woff'),
-       url('aut-icon.ttf?t=1579234722626') format('truetype'),
-       url('aut-icon.svg?t=1579234722626#aut-icon') format('svg');
+  src: url('aut-icon.eot?t=1579242016875');
+  src: url('aut-icon.eot?t=1579242016875#iefix') format('embedded-opentype'),
+       url('aut-icon.woff2?t=1579242016875') format('woff2'),
+       url('aut-icon.woff?t=1579242016875') format('woff'),
+       url('aut-icon.ttf?t=1579242016875') format('truetype'),
+       url('aut-icon.svg?t=1579242016875#aut-icon') format('svg');
 }
 
 [class^="icon-aut-"], [class*=" icon-aut-"]{
