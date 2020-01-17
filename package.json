@@ -1,13 +1,14 @@
 {
   "name": "aut-icon",
   "version": "0.0.1",
-  "description": "aut Iconfont lib",
+  "description": "Aut Iconfont lib",
   "main": "./dist/index.css",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "build": "gulp build",
-    "release": "sh ./build/release.sh"
+    "release": "sh ./release.sh"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "keywords": [
     "aut",
     "gulp",
