@@ -1,0 +1,28 @@
+{
+  "name": "aut-icon",
+  "version": "0.0.1",
+  "description": "aut Iconfont lib",
+  "main": "./dist/index.css",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "build": "gulp build",
+    "release": "sh ./build/release.sh"
+  },
+  "keywords": [
+    "aut",
+    "gulp",
+    "svg",
+    "iconfont",
+    "icon"
+  ],
+  "author": "TenderQ",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0",
+    "gulp-template": "^5.0.0",
+    "gulp-upload": "^1.0.0"
+  }
+}

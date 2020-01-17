@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aut Iconfont</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../lib/index.css">
+  <style>
+    body {
+      padding: 10px 50px 50px;
+      margin: 0;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .icon_lists {
+      width: 100% !important;
+    }
+
+    .icon_lists li {
+      float: left;
+      width: 140px;
+      text-align: center;
+      list-style: none !important;
+      font-size: 12px;
+      padding: 0 5px;
+    }
+
+    .icon_lists .icon {
+      display: block;
+      text-align: center;
+      font-size: 24px;
+      line-height: 50px;
+      margin: 10px 0;
+      color: #333;
+      -webkit-transition: font-size 0.25s ease-out 0s;
+      -moz-transition: font-size 0.25s ease-out 0s;
+      transition: font-size 0.25s ease-out 0s;
+    }
+
+    .fontclass {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .icon_lists .icon:hover {
+      font-size: 50px;
+    }
+
+    .markdown {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      line-height: 1.5;
+    }
+
+    .markdown img {
+      vertical-align: middle;
+      max-width: 100%;
+    }
+
+    .markdown h1 {
+      color: #404040;
+      font-weight: 500;
+      line-height: 40px;
+      margin-bottom: 24px;
+    }
+
+    .name {
+      font-size: 16px;
+    }
+
+    .clear:after {
+      content: '\20';
+      display: block;
+      height: 0;
+      clear: both;
+    }
+
+    .helps {
+      margin-top: 40px;
+    }
+
+    .helps pre {
+      padding: 20px;
+      margin: 10px 0;
+      border: solid 1px #e7e1cd;
+      background-color: #fffdef;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="clear: both;">
+    <h2>使用 Icon Font</h2>
+    <pre>&lt;i class=&quot;<%= cssClass %>-close&quot;&gt;&lt;/i&gt;</pre>
+  </div>
+  <div style="clear: both;">
+    <h2>使用CDN(暂不支持)</h2>
+    <pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;//CDN地址/index.css&quot;&gt;</pre>
+  </div>
+  <h2>Icon Font</h2>
+  <ul class="icon_lists clear">
+    <% _.each(icons, function(icon) { %>
+    <li title="icon-<%= icon.name %>">
+      <i class="icon <%= cssClass %>-<%= icon.name %>"> </i>
+      <div class="fontclass"><%= icon.name %></div>
+    </li>
+    <% }); %>
+  </ul>
+</body>
+
+</html>
