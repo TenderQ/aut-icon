@@ -11,7 +11,7 @@ then
   npm version $VERSION --no-git-tag-version
   VERSION=$VERSION
   npm run build
-  npm run changelog
+  # npm run changelog
 
   # commit
   git tag v$VERSION
@@ -22,5 +22,5 @@ then
   git push origin refs/tags/v$VERSION
   git push origin master
 
-  npm publish --registry=https://npm.pkg.github.com/
+  npm publish --registry=https://registry.npmjs.org/
 fi

@@ -1,6 +1,6 @@
 {
   "name": "aut-icon",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Aut Iconfont lib",
   "main": "./dist/index.css",
   "scripts": {
