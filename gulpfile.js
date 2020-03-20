@@ -53,11 +53,11 @@ gulp.task('iconfont', function() {
 
 // 生成例子
 gulp.task('demo', () => {
+    var params = Object.assign({
+        icons: icons
+    }, config);
     return gulp.src('src/demo.html')
-        .pipe(template({
-            icons,
-            ...config
-        }))
+        .pipe(template(params))
         .pipe(gulp.dest(distPath));
 });
 
